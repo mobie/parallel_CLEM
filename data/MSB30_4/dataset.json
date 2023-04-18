@@ -9,6 +9,23 @@
     "timepoint": 0
   },
   "sources": {
+    "cells": {
+      "segmentation": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/cells",
+            "channel": 0
+          }
+        },
+        "imageData": {
+          "ome.zarr": {
+            "relativePath": "images/ome-zarr/cells.ome.zarr",
+            "channel": 0
+          }
+        },
+        "name": "dataSource"
+      }
+    },
     "live-cell_FM": {
       "image": {
         "imageData": {
@@ -17,7 +34,7 @@
             "channel": 0
           }
         },
-        "name": "dataSource"
+        "name": "live-cell_FM"
       }
     }
   },
@@ -38,11 +55,11 @@
             "showImagesIn3d": false,
             "name": "live-cell_FM",
             "opacity": 1.0,
-            "visible": true
+            "visible": true,
+            "blendingMode": "sum"
           }
         }
       ],
-      "isExclusive": true,
       "name": "live-cell_FM",
       "overlayNames": false
     },
@@ -62,12 +79,46 @@
             "showImagesIn3d": false,
             "name": "live-cell_FM",
             "opacity": 1.0,
-            "visible": true
+            "visible": true,
+            "blendingMode": "sum"
           }
         }
       ],
       "isExclusive": true,
-      "name": "live-cell_FM",
+      "name": "default",
+      "overlayNames": false
+    },
+    "cells": {
+      "uiSelectionGroup": "segmentations",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "default.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true,
+            "blendingMode": "alpha"
+          }
+        }
+      ],
+      "name": "cells",
       "overlayNames": false
     }
   }
