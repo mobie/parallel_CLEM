@@ -1,0 +1,74 @@
+{
+  "is2D": false,
+  "defaultLocation": {
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "timepoint": 0
+  },
+  "sources": {
+    "live-cell_FM": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "relativePath": "images/ome-zarr/live-cell_FM.ome.zarr",
+            "channel": 0
+          }
+        },
+        "name": "dataSource"
+      }
+    }
+  },
+  "views": {
+    "live-cell_FM": {
+      "uiSelectionGroup": "fluorescence",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "live-cell_FM"
+            ],
+            "color": "255-255-255-255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "live-cell_FM",
+            "opacity": 1.0,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": true,
+      "name": "live-cell_FM",
+      "overlayNames": false
+    },
+    "default": {
+      "uiSelectionGroup": "bookmark",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "live-cell_FM"
+            ],
+            "color": "255-255-255-255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "live-cell_FM",
+            "opacity": 1.0,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": true,
+      "name": "live-cell_FM",
+      "overlayNames": false
+    }
+  }
+}
