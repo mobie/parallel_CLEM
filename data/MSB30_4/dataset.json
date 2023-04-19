@@ -9,43 +9,36 @@
     "timepoint": 0
   },
   "sources": {
-    "cells": {
-      "segmentation": {
-        "tableData": {
-          "tsv": {
-            "relativePath": "tables/cells",
-            "channel": 0
-          }
-        },
-        "imageData": {
-          "ome.zarr": {
-            "relativePath": "images/ome-zarr/cells.ome.zarr",
-            "channel": 0
-          }
-        },
-        "name": "dataSource"
-      }
-    },
-    "live-cell_FM": {
+    "MSB30_4_FM": {
       "image": {
         "imageData": {
           "ome.zarr": {
-            "relativePath": "images/ome-zarr/live-cell_FM.ome.zarr",
+            "relativePath": "images/ome-zarr/MSB30_4_FM.ome.zarr",
             "channel": 0
           }
         },
-        "name": "live-cell_FM"
+        "name": "MSB30_4_FM"
+      }
+    },
+    "MSB30_4_spotIDs": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "relativePath": "images/ome-zarr/MSB30_4_spotIDs.ome.zarr",
+            "channel": 0
+          }
+        }
       }
     }
   },
   "views": {
-    "live-cell_FM": {
+    "MSB30_4_FM": {
       "uiSelectionGroup": "fluorescence",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
-              "live-cell_FM"
+              "MSB30_4_FM"
             ],
             "color": "255-255-255-255",
             "contrastLimits": [
@@ -53,15 +46,15 @@
               255.0
             ],
             "showImagesIn3d": false,
-            "name": "live-cell_FM",
+            "name": "MSB30_4_FM",
             "opacity": 1.0,
             "visible": true,
             "blendingMode": "sum"
           }
         }
       ],
-      "name": "live-cell_FM",
-      "overlayNames": false
+      "isExclusive": false,
+      "name": "MSB30_4_FM"
     },
     "default": {
       "uiSelectionGroup": "bookmark",
@@ -69,7 +62,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "live-cell_FM"
+              "MSB30_4_FM"
             ],
             "color": "255-255-255-255",
             "contrastLimits": [
@@ -77,7 +70,7 @@
               255.0
             ],
             "showImagesIn3d": false,
-            "name": "live-cell_FM",
+            "name": "MSB30_4_FM",
             "opacity": 1.0,
             "visible": true,
             "blendingMode": "sum"
@@ -85,41 +78,30 @@
         }
       ],
       "isExclusive": true,
-      "name": "default",
-      "overlayNames": false
+      "name": "MSB30_4_FM"
     },
-    "cells": {
-      "uiSelectionGroup": "segmentations",
+    "MSB30_4_spotIDs": {
+      "uiSelectionGroup": "labels",
       "sourceDisplays": [
         {
-          "segmentationDisplay": {
+          "imageDisplay": {
             "sources": [
-              "cells"
+              "MSB30_4_spotIDs"
             ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
+            "color": "255-255-255-255",
+            "contrastLimits": [
+              0.0,
+              255.0
             ],
-            "additionalTables": [
-              "default.tsv"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true,
-            "blendingMode": "alpha"
+            "showImagesIn3d": false,
+            "name": "MSB30_4_spotIDs",
+            "opacity": 1.0,
+            "visible": true
           }
         }
       ],
-      "name": "cells",
-      "overlayNames": false
+      "isExclusive": false,
+      "name": "MSB30_4_spotIDs"
     }
   }
 }
