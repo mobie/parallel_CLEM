@@ -16,8 +16,7 @@
             "relativePath": "images/ome-zarr/MSB30_4_FM.ome.zarr",
             "channel": 0
           }
-        },
-        "name": "MSB30_4_FM"
+        }
       }
     },
     "MSB30_4_spotIDs": {
@@ -40,7 +39,7 @@
             "sources": [
               "MSB30_4_FM"
             ],
-            "color": "255-255-255-255",
+            "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
               255.0
@@ -53,8 +52,7 @@
           }
         }
       ],
-      "isExclusive": false,
-      "name": "MSB30_4_FM"
+      "isExclusive": false
     },
     "default": {
       "uiSelectionGroup": "bookmark",
@@ -64,7 +62,7 @@
             "sources": [
               "MSB30_4_FM"
             ],
-            "color": "255-255-255-255",
+            "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
               255.0
@@ -77,8 +75,7 @@
           }
         }
       ],
-      "isExclusive": true,
-      "name": "MSB30_4_FM"
+      "isExclusive": true
     },
     "MSB30_4_spotIDs": {
       "uiSelectionGroup": "labels",
@@ -88,7 +85,7 @@
             "sources": [
               "MSB30_4_spotIDs"
             ],
-            "color": "255-255-255-255",
+            "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
               255.0
@@ -100,8 +97,7 @@
           }
         }
       ],
-      "isExclusive": false,
-      "name": "MSB30_4_spotIDs"
+      "isExclusive": false
     }
   }
 }
