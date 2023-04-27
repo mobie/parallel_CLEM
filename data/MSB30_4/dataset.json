@@ -6,24 +6,14 @@
       0.0,
       0.0
     ],
-    "timepoint": 0
+    "timepoint": 48
   },
   "sources": {
-    "MSB30_4_FM": {
+    "C1-MSB30_4_FM": {
       "image": {
         "imageData": {
           "ome.zarr": {
-            "relativePath": "images/ome-zarr/MSB30_4_FM.ome.zarr",
-            "channel": 0
-          }
-        }
-      }
-    },
-    "MSB30_4_spotIDs": {
-      "image": {
-        "imageData": {
-          "ome.zarr": {
-            "relativePath": "images/ome-zarr/MSB30_4_spotIDs.ome.zarr",
+            "relativePath": "images/ome-zarr/C1-MSB30_sample4.ome.zarr",
             "channel": 0
           }
         }
@@ -31,28 +21,208 @@
     }
   },
   "views": {
-    "MSB30_4_FM": {
+    "C1-MSB30_4_FM": {
       "uiSelectionGroup": "fluorescence",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
-              "MSB30_4_FM"
+              "C1-MSB30_4_FM"
             ],
-            "color": "r=255,g=255,b=255,a=255",
+            "color": "255-0-255-255",
             "contrastLimits": [
               0.0,
-              255.0
+              222.0
             ],
             "showImagesIn3d": false,
-            "name": "MSB30_4_FM",
+            "name": "C1-MSB30_sample4",
             "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
+            "visible": true
           }
         }
       ],
       "isExclusive": false
+    },
+    "ghosts_FM": {
+      "isExclusive": false,
+      "uiSelectionGroup": "ghosts",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "255-0-255-255",
+            "contrastLimits": [
+              0.0,
+              222.0
+            ],
+            "name": "C1-MSB30_4_FM_tp_-20-to-48",
+            "opacity": 0.2,
+            "sources": [
+              "C1-MSB30_4_FM_tp_-20-to-48"
+            ],
+            "showImagesIn3d": false,
+            "visible": true
+          }
+        },
+        {
+          "imageDisplay": {
+            "color": "255-0-255-255",
+            "contrastLimits": [
+              0.0,
+              222.0
+            ],
+            "name": "C1-MSB30_4_FM_tp_-16-to-48",
+            "opacity": 0.4,
+            "sources": [
+              "C1-MSB30_4_FM_tp_-16-to-48"
+            ],
+            "showImagesIn3d": false,
+            "visible": true
+          }
+        },
+        {
+          "imageDisplay": {
+            "color": "255-0-255-255",
+            "contrastLimits": [
+              0.0,
+              222.0
+            ],
+            "name": "C1-MSB30_4_FM_tp_-12-to-48",
+            "opacity": 0.6,
+            "sources": [
+              "C1-MSB30_4_FM_tp_-12-to-48"
+            ],
+            "showImagesIn3d": false,
+            "visible": true
+          }
+        },
+        {
+          "imageDisplay": {
+            "color": "255-0-255-255",
+            "contrastLimits": [
+              0.0,
+              222.0
+            ],
+            "name": "C1-MSB30_4_FM_tp_-8-to-48",
+            "opacity": 0.8,
+            "sources": [
+              "C1-MSB30_4_FM_tp_-8-to-48"
+            ],
+            "showImagesIn3d": false,
+            "visible": true
+          }
+        },
+        {
+          "imageDisplay": {
+            "color": "255-0-255-255",
+            "contrastLimits": [
+              0.0,
+              222.0
+            ],
+            "name": "C1-MSB30_4_FM_tp_-4-to-48",
+            "opacity": 1.0,
+            "sources": [
+              "C1-MSB30_4_FM_tp_-4-to-48"
+            ],
+            "showImagesIn3d": false,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "timepoints": {
+            "sources": [
+              "C1-MSB30_4_FM"
+            ],
+            "keep": false,
+            "name": "C1-MSB30_4_FM_timepoints",
+            "parameters": [
+              [
+                48,
+                29
+              ]
+            ],
+            "sourceNamesAfterTransform": [
+              "C1-MSB30_4_FM_tp_-20-to-48"
+            ]
+          }
+        },
+        {
+          "timepoints": {
+            "sources": [
+              "C1-MSB30_4_FM"
+            ],
+            "keep": false,
+            "name": "C1-MSB30_4_FM_timepoints",
+            "parameters": [
+              [
+                48,
+                33
+              ]
+            ],
+            "sourceNamesAfterTransform": [
+              "C1-MSB30_4_FM_tp_-16-to-48"
+            ]
+          }
+        },
+        {
+          "timepoints": {
+            "sources": [
+              "C1-MSB30_4_FM"
+            ],
+            "keep": false,
+            "name": "C1-MSB30_4_FM_timepoints",
+            "parameters": [
+              [
+                48,
+                37
+              ]
+            ],
+            "sourceNamesAfterTransform": [
+              "C1-MSB30_4_FM_tp_-12-to-48"
+            ]
+          }
+        },
+        {
+          "timepoints": {
+            "sources": [
+              "C1-MSB30_4_FM"
+            ],
+            "keep": false,
+            "name": "C1-MSB30_4_FM_timepoints",
+            "parameters": [
+              [
+                48,
+                41
+              ]
+            ],
+            "sourceNamesAfterTransform": [
+              "C1-MSB30_4_FM_tp_-8-to-48"
+            ]
+          }
+        },
+        {
+          "timepoints": {
+            "sources": [
+              "C1-MSB30_4_FM"
+            ],
+            "keep": false,
+            "name": "C1-MSB30_4_FM_timepoints",
+            "parameters": [
+              [
+                48,
+                45
+              ]
+            ],
+            "sourceNamesAfterTransform": [
+              "C1-MSB30_4_FM_tp_-4-to-48"
+            ]
+          }
+        }
+      ],
+      "viewerTransform": {
+        "timepoint": 48
+      }
     },
     "default": {
       "uiSelectionGroup": "bookmark",
@@ -60,44 +230,21 @@
         {
           "imageDisplay": {
             "sources": [
-              "MSB30_4_FM"
+              "C1-MSB30_4_FM"
             ],
-            "color": "r=255,g=255,b=255,a=255",
+            "color": "255-255-255-255",
             "contrastLimits": [
               0.0,
               255.0
             ],
             "showImagesIn3d": false,
-            "name": "MSB30_4_FM",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        }
-      ],
-      "isExclusive": true
-    },
-    "MSB30_4_spotIDs": {
-      "uiSelectionGroup": "labels",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "MSB30_4_spotIDs"
-            ],
-            "color": "r=255,g=255,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "name": "MSB30_4_spotIDs",
+            "name": "C1-MSB30_sample4",
             "opacity": 1.0,
             "visible": true
           }
         }
       ],
-      "isExclusive": false
+      "isExclusive": true
     }
   }
 }
