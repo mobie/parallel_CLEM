@@ -3,7 +3,7 @@ from collections import Counter
 
 # Path to directory (needs to be specified by user)
 
-datadir = "/g/schwab/Beckwith_MSB/Analysis/Live_LM_dataAnalysis/Trackmate_csvFiles/"
+datadir = "/g/schwab/Beckwith_MSB/Analysis/Live_LM_dataAnalysis/Trackmate_csvFiles/Updated/"
 
 tracks = pd.read_csv(datadir + "MSB30_4_tracks.csv", \
                      usecols=['NUMBER_SPOTS', 'NUMBER_GAPS', 'LONGEST_GAP', 'NUMBER_SPLITS', 'TRACK_ID'])
@@ -91,4 +91,4 @@ df_merged["MOTHER_ID"] = df_merged["LINEAGE"].apply(lambda x: get_mother(x))
 
 df_m1=df_merged.drop([0,1,2,len(links),len(links)+1])
 
-df_m1.to_csv('data/MSB30_4/tables/trackmate1.tsv',sep='\t')
+df_m1.to_csv('data/MSB30_4/tables/trackmate2.tsv',sep='\t')
