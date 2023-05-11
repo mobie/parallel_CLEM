@@ -19,34 +19,16 @@
         }
       }
     },
-    "NEW_LblImg_MSB30_4_spotIDs": {
+    "MSB30_4_spotIDs": {
       "segmentation": {
         "tableData": {
           "tsv": {
-            "relativePath": "tables/NEW_LblImg_MSB30_4_spotIDs",
-            "channel": 0
+            "relativePath": "tables/MSB30_4_spotIDs"
           }
         },
         "imageData": {
           "ome.zarr": {
-            "relativePath": "images/ome-zarr/NEW_LblImg_MSB30_4_spotIDs.ome.zarr",
-            "channel": 0
-          }
-        }
-      }
-    },
-    "LblImg_MSB30_4_spotIDs": {
-      "segmentation": {
-        "tableData": {
-          "tsv": {
-            "relativePath": "tables/LblImg_MSB30_4_spotIDs",
-            "channel": 0
-          }
-        },
-        "imageData": {
-          "ome.zarr": {
-            "relativePath": "images/ome-zarr/LblImg_MSB30_4_spotIDs.ome.zarr",
-            "channel": 0
+            "relativePath": "images/ome-zarr/MSB30_4_spotIDs.ome.zarr"
           }
         }
       }
@@ -74,8 +56,7 @@
           }
         }
       ],
-      "isExclusive": false,
-      "overlayNames": false
+      "isExclusive": false
     },
     "default": {
       "uiSelectionGroup": "bookmark",
@@ -98,50 +79,15 @@
           }
         }
       ],
-      "isExclusive": true,
-      "overlayNames": false
+      "isExclusive": true
     },
-    "LblImg_MSB30_4_spotIDs": {
-      "uiSelectionGroup": "segmentations",
+    "MSB30_4_spotIDs": {
+      "uiSelectionGroup": "segmentation",
       "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
-              "LblImg_MSB30_4_spotIDs"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "colorByColumn": "TRACK_ID",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "additionalTables": [
-              "default.tsv"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "LblImg_MSB30_4_spotIDs",
-            "opacity": 0.5,
-            "visible": true,
-            "blendingMode": "alpha"
-          }
-        }
-      ],
-      "isExclusive": false,
-      "overlayNames": false
-    },
-    "NEW_LblImg_MSB30_4_spotIDs": {
-      "uiSelectionGroup": "segmentations",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "NEW_LblImg_MSB30_4_spotIDs"
+              "MSB30_4_spotIDs"
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
@@ -150,23 +96,18 @@
               "anchor_x",
               "anchor_y"
             ],
-            "additionalTables": [
-              "default.tsv"
-            ],
             "showTable": true,
             "showAsBoundaries": false,
             "boundaryThickness": 1.0,
             "randomColorSeed": 42,
             "opacityNotSelected": 0.15,
-            "name": "NEW_LblImg_MSB30_4_spotIDs",
+            "name": "MSB30_4_spotIDs",
             "opacity": 0.5,
-            "visible": true,
-            "blendingMode": "alpha"
+            "visible": true
           }
         }
       ],
-      "isExclusive": false,
-      "overlayNames": false
+      "isExclusive": false
     }
   }
 }
