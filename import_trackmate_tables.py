@@ -6,12 +6,18 @@ from collections import Counter
 datadir = "/g/schwab/Beckwith_MSB/Analysis/Live_LM_dataAnalysis/Trackmate_csvFiles/Updated/"
 
 tracks = pd.read_csv(datadir + "MSB30_4_tracks.csv", \
-                     usecols=['NUMBER_SPOTS', 'NUMBER_GAPS', 'LONGEST_GAP', 'NUMBER_SPLITS', 'TRACK_ID'])
+                     usecols=['NUMBER_SPOTS', 'NUMBER_GAPS', 'LONGEST_GAP', 'NUMBER_SPLITS', 'TRACK_ID', \
+                              'TRACK_MEAN_SPEED', 'TRACK_MAX_SPEED', 'TRACK_MIN_SPEED', 'TRACK_MEDIAN_SPEED', \
+                              'TRACK_STD_SPEED', 'TOTAL_DISTANCE_TRAVELED', 'MAX_DISTANCE_TRAVELED', \
+                              'MEAN_STRAIGHT_LINE_SPEED', 'LINEARITY_OF_FORWARD_PROGRESSION', \
+                              'MEAN_DIRECTIONAL_CHANGE_RATE'])
 links = pd.read_csv(datadir + "MSB30_4_edges.csv", \
                     usecols=['LABEL', 'TRACK_ID', 'SPOT_SOURCE_ID', 'SPOT_TARGET_ID', 'EDGE_X_LOCATION', \
-                             'EDGE_Y_LOCATION'])
+                             'EDGE_Y_LOCATION', 'DIRECTIONAL_CHANGE_RATE','SPEED', 'DISPLACEMENT'])
 spots = pd.read_csv(datadir + "MSB30_4_spots.csv", \
-                    usecols=['LABEL', 'ID', 'TRACK_ID', 'POSITION_X', 'POSITION_Y', 'FRAME'])
+                    usecols=['LABEL', 'ID', 'TRACK_ID', 'POSITION_X', 'POSITION_Y', 'POSITION_T', 'FRAME', \
+                             'ELLIPSE_ASPECTRATIO', 'AREA', 'PERIMETER', 'CIRCULARITY', 'SOLIDITY'
+                             ])
 
 # Generate a list of spot_ids that correspond to a splitting event
 # (SOURCE_IDs of splitting event appear twice)
@@ -31,12 +37,15 @@ links["Splitting_event"] = links["SPOT_SOURCE_ID"].apply(lambda x: \
                                                                  else True)
 # Rename link dataframe columns
 
-links.columns = ['LABEL', \
-                 'TRACK_ID', \
-                 'SOURCE_ID', \
-                 'TARGET_ID', \
-                 'EDGE_X_LOCATION', \
-                 'EDGE_Y_LOCATION', \
+links.columns = ['LABEL',
+                 'TRACK_ID',
+                 'SOURCE_ID',
+                 'TARGET_ID',
+                 'DIRECTIONAL_CHANGE_RATE',
+                 'SPEED',
+                 'DISPLACEMENT',
+                 'EDGE_X_LOCATION',
+                 'EDGE_Y_LOCATION',
                  'SPLITTING_EVENT']
 
 
@@ -87,8 +96,9 @@ def get_mother(x):
         return lineage_list[-2]
 
 
-df_merged["MOTHER_ID"] = df_merged["LINEAGE"].apply(lambda x: get_mother(x))
+# df_merged["MOTHER_ID"] = df_merged["LINEAGE"].apply(lambda x: get_mother(x))
 
+# remove multi-header rows
 df_m1=df_merged.drop([0,1,2,len(links),len(links)+1])
 
 df_m1.to_csv('data/MSB30_4/tables/trackmate2.tsv',sep='\t')
