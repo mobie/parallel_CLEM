@@ -1,6 +1,7 @@
 {
 	"datasets": [
-		"MSB30_4"
+		"MSB30_4",
+		"MSB26_2"
 	],
 	"defaultDataset": "MSB30_4",
 	"specVersion": "0.3.0",
