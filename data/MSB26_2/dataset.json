@@ -9,11 +9,11 @@
   },
   "is2D": false,
   "sources": {
-    "220509_MSB26_sample2_3Donly_aligned_full": {
+    "MSB26_2": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/bdv-n5/220509_MSB26_sample2_3Donly_aligned_full.xml"
+            "relativePath": "images/bdv-n5/MSB26_2.xml"
           }
         }
       }
@@ -38,7 +38,7 @@
     }
   },
   "views": {
-    "220509_MSB26_sample2_3Donly_aligned_full": {
+    "MSB26_2": {
       "isExclusive": false,
       "sourceDisplays": [
         {
@@ -48,11 +48,11 @@
               0.0,
               255.0
             ],
-            "name": "220509_MSB26_sample2_3Donly_aligned_full",
+            "name": "MSB26_2",
             "opacity": 1.0,
             "showImagesIn3d": false,
             "sources": [
-              "220509_MSB26_sample2_3Donly_aligned_full"
+              "MSB26_2"
             ],
             "visible": true
           }
@@ -180,11 +180,11 @@
               125.20499999999998,
               255.0
             ],
-            "name": "220509_MSB26_sample2_3Donly_aligned_full",
+            "name": "MSB26_2",
             "opacity": 0.6358,
             "showImagesIn3d": false,
             "sources": [
-              "220509_MSB26_sample2_3Donly_aligned_full"
+              "MSB26_2"
             ],
             "visible": true
           }
@@ -234,7 +234,7 @@
               ]
             ],
             "sources": [
-              "220509_MSB26_sample2_3Donly_aligned_full"
+              "MSB26_2"
             ]
           }
         },
@@ -256,7 +256,7 @@
               -6960.745393115333
             ],
             "sources": [
-              "220509_MSB26_sample2_3Donly_aligned_full"
+              "MSB26_2"
             ]
           }
         }
@@ -290,11 +290,11 @@
               0.0,
               255.0
             ],
-            "name": "220509_MSB26_sample2_3Donly_aligned_full",
+            "name": "MSB26_2",
             "opacity": 1.0,
             "showImagesIn3d": false,
             "sources": [
-              "220509_MSB26_sample2_3Donly_aligned_full"
+              "MSB26_2"
             ],
             "visible": true
           }
@@ -312,11 +312,11 @@
               0.0,
               255.0
             ],
-            "name": "220509_MSB26_sample2_3Donly_aligned_full",
+            "name": "MSB26_2",
             "opacity": 1.0,
             "showImagesIn3d": false,
             "sources": [
-              "220509_MSB26_sample2_3Donly_aligned_full"
+              "MSB26_2"
             ],
             "visible": true
           }
@@ -366,7 +366,7 @@
               ]
             ],
             "sources": [
-              "220509_MSB26_sample2_3Donly_aligned_full"
+              "MSB26_2"
             ]
           }
         }
