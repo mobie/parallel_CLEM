@@ -9,6 +9,15 @@
   },
   "is2D": false,
   "sources": {
+    "MSB30_4": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/MSB30_4.xml"
+          }
+        }
+      }
+    },
     "MSB30_4_FM": {
       "image": {
         "imageData": {
@@ -57,6 +66,27 @@
         }
       ],
       "uiSelectionGroup": "fluorescence"
+    },
+    "MSB30_4": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "MSB30_4",
+            "opacity": 1.0,
+            "sources": [
+              "MSB30_4"
+            ]
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "uiSelectionGroup": "EM"
     },
     "MSB30_4_spotIDs": {
       "isExclusive": false,
