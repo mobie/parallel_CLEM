@@ -1,4 +1,5 @@
 {
+  "is2D": false,
   "defaultLocation": {
     "position": [
       0.0,
@@ -7,7 +8,6 @@
     ],
     "timepoint": 48
   },
-  "is2D": false,
   "sources": {
     "MSB30_4": {
       "image": {
@@ -22,22 +22,49 @@
       "image": {
         "imageData": {
           "ome.zarr": {
-            "channel": 0,
-            "relativePath": "images/ome-zarr/MSB30_4_FM.ome.zarr"
+            "relativePath": "images/ome-zarr/MSB30_4_FM.ome.zarr",
+            "channel": 0
           }
         }
       }
     },
     "MSB30_4_spotIDs": {
       "segmentation": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/MSB30_4_spotIDs"
+          }
+        },
         "imageData": {
           "ome.zarr": {
             "relativePath": "images/ome-zarr/MSB30_4_spotIDs.ome.zarr"
           }
-        },
-        "tableData": {
-          "tsv": {
-            "relativePath": "tables/MSB30_4_spotIDs"
+        }
+      }
+    },
+    "C3-MSB30_4_tracks-1": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "relativePath": "images/ome-zarr/C3-MSB30_4_tracks-1.ome.zarr"
+          }
+        }
+      }
+    },
+    "C2-MSB30_4_tracks-1": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "relativePath": "images/ome-zarr/C2-MSB30_4_tracks-1.ome.zarr"
+          }
+        }
+      }
+    },
+    "C1-MSB30_4_tracks-1": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "relativePath": "images/ome-zarr/C1-MSB30_4_tracks-1.ome.zarr"
           }
         }
       }
@@ -45,165 +72,310 @@
   },
   "views": {
     "C1-MSB30_4_FM": {
-      "isExclusive": false,
+      "uiSelectionGroup": "fluorescence",
       "sourceDisplays": [
         {
           "imageDisplay": {
-            "blendingMode": "sum",
+            "sources": [
+              "MSB30_4_FM"
+            ],
             "color": "255-255-255-255",
             "contrastLimits": [
               0.0,
               222.0
             ],
+            "showImagesIn3d": false,
             "name": "C1-MSB30_sample4",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "MSB30_4_FM"
-            ],
-            "visible": true
+            "visible": true,
+            "blendingMode": "sum"
           }
         }
       ],
-      "uiSelectionGroup": "fluorescence"
+      "isExclusive": false
     },
     "MSB30_4": {
-      "isExclusive": false,
+      "uiSelectionGroup": "EM",
       "sourceDisplays": [
         {
           "imageDisplay": {
+            "sources": [
+              "MSB30_4"
+            ],
             "color": "white",
             "contrastLimits": [
               0.0,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "MSB30_4",
             "opacity": 1.0,
-            "sources": [
-              "MSB30_4"
-            ]
+            "visible": true
           }
         }
       ],
       "sourceTransforms": [],
-      "uiSelectionGroup": "EM"
+      "isExclusive": false
     },
     "MSB30_4_spotIDs": {
-      "isExclusive": false,
+      "uiSelectionGroup": "segmentation",
       "sourceDisplays": [
         {
           "segmentationDisplay": {
-            "boundaryThickness": 1.0,
+            "sources": [
+              "MSB30_4_spotIDs"
+            ],
+            "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "name": "MSB30_4_spotIDs",
-            "opacity": 0.5,
-            "opacityNotSelected": 0.15,
-            "randomColorSeed": 42,
+            "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
             ],
-            "showAsBoundaries": false,
-            "showScatterPlot": false,
-            "showSelectedSegmentsIn3d": false,
             "showTable": true,
-            "sources": [
-              "MSB30_4_spotIDs"
-            ],
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "MSB30_4_spotIDs",
+            "opacity": 0.5,
             "visible": true
           }
         }
       ],
-      "uiSelectionGroup": "segmentation"
+      "isExclusive": false
     },
     "default": {
-      "isExclusive": true,
+      "uiSelectionGroup": "bookmark",
       "sourceDisplays": [
         {
           "imageDisplay": {
-            "blendingMode": "sum",
+            "sources": [
+              "MSB30_4_FM"
+            ],
             "color": "255-255-255-255",
             "contrastLimits": [
               0.0,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "MSB30_4_FM",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "MSB30_4_FM"
-            ],
-            "visible": true
+            "visible": true,
+            "blendingMode": "sum"
           }
         }
       ],
-      "uiSelectionGroup": "bookmark"
+      "isExclusive": true
     },
     "clem": {
-      "isExclusive": true,
+      "uiSelectionGroup": "CLEM",
       "sourceDisplays": [
         {
           "imageDisplay": {
-            "blendingMode": "sum",
+            "sources": [
+              "MSB30_4_FM"
+            ],
             "color": "255-255-255-255",
             "contrastLimits": [
               0.0,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "MSB30_4_FM",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "MSB30_4_FM"
-            ],
-            "visible": true
+            "visible": true,
+            "blendingMode": "sum"
           }
         },
-		{
+        {
           "imageDisplay": {
+            "sources": [
+              "MSB30_4"
+            ],
             "color": "white",
             "contrastLimits": [
               0.0,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "MSB30_4_EM",
             "opacity": 1.0,
-            "sources": [
-              "MSB30_4"
-            ]
+            "visible": true
           }
         }
       ],
       "sourceTransforms": [
         {
           "timepoints": {
-            "keep": false,
-            "name": "em-timepoints",
             "parameters": [
               [
                 45,
-				48
+                48
               ],
               [
                 46,
-				48
+                48
               ],
               [
                 47,
-				48
+                48
               ],
               [
                 48,
-				48
+                48
               ]
             ],
+            "keep": false,
+            "name": "em-timepoints",
             "sources": [
               "MSB30_4"
             ]
           }
         }
       ],
-      "uiSelectionGroup": "CLEM"
+      "isExclusive": true
+    },
+    "C3-MSB30_4_tracks-1": {
+      "uiSelectionGroup": "tracks",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "C3-MSB30_4_tracks-1"
+            ],
+            "color": "r0-g0-b255-a255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "C3-MSB30_4_tracks-1",
+            "opacity": 1.0,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "C2-MSB30_4_tracks-1": {
+      "uiSelectionGroup": "tracks",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "C2-MSB30_4_tracks-1"
+            ],
+            "color": "r0-g255-b0-a255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "C2-MSB30_4_tracks-1",
+            "opacity": 1.0,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "C1-MSB30_4_tracks-1": {
+      "uiSelectionGroup": "tracks",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "C1-MSB30_4_tracks-1"
+            ],
+            "color": "r255-g0-b0-a255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "C1-MSB30_4_tracks-1",
+            "opacity": 1.0,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "0_RGB_tracks": {
+      "uiSelectionGroup": "tracks",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "C3-MSB30_4_tracks-1"
+            ],
+            "color": "r=0,g=0,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "C3-MSB30_4_tracks-1",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "C2-MSB30_4_tracks-1"
+            ],
+            "color": "r=0,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "C2-MSB30_4_tracks-1",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "C1-MSB30_4_tracks-1"
+            ],
+            "color": "r=255,g=0,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "C1-MSB30_4_tracks-1",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          9.436311018734582E-4,
+          0.0,
+          0.0,
+          -0.15903416003091692,
+          0.0,
+          9.436311018734582E-4,
+          0.0,
+          -0.15403416003091688,
+          0.0,
+          0.0,
+          9.436311018734582E-4,
+          0.0
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": false
     }
   }
 }
