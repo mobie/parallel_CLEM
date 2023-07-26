@@ -1,4 +1,5 @@
 {
+  "is2D": false,
   "defaultLocation": {
     "position": [
       0.0,
@@ -7,7 +8,6 @@
     ],
     "timepoint": 0
   },
-  "is2D": false,
   "sources": {
     "MSB26_2": {
       "image": {
@@ -18,7 +18,7 @@
         }
       }
     },
-   "C1-sample2_6secFrame_fixedAt33": {
+    "C1-sample2_6secFrame_fixedAt33": {
       "image": {
         "imageData": {
           "ome.zarr": {
@@ -27,7 +27,7 @@
         }
       }
     },
-	"Fluo2": {
+    "Fluo2": {
       "image": {
         "imageData": {
           "ome.zarr": {
@@ -39,81 +39,81 @@
   },
   "views": {
     "MSB26_2": {
-      "isExclusive": false,
+      "uiSelectionGroup": "Cells",
       "sourceDisplays": [
         {
           "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
             "color": "white",
             "contrastLimits": [
               0.0,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "MSB26_2",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "MSB26_2"
-            ],
             "visible": true
           }
         }
       ],
-      "uiSelectionGroup": "Cells"
+      "isExclusive": false
     },
     "C1-sample2_6secFrame_fixedAt33": {
-      "isExclusive": false,
+      "uiSelectionGroup": "fluo",
       "sourceDisplays": [
         {
           "imageDisplay": {
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
             "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "C1-sample2_6secFrame_fixedAt33",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "C1-sample2_6secFrame_fixedAt33"
-            ],
             "visible": true
           }
         }
       ],
-      "uiSelectionGroup": "fluo"
+      "isExclusive": false
     },
     "clem": {
-      "isExclusive": true,
+      "uiSelectionGroup": "CLEM",
       "sourceDisplays": [
         {
           "imageDisplay": {
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
             "color": "r=204,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
               132.243
             ],
+            "showImagesIn3d": false,
             "name": "C1-sample2_6secFrame_fixedAt33",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "C1-sample2_6secFrame_fixedAt33"
-            ],
             "visible": true
           }
         },
-		{
+        {
           "imageDisplay": {
+            "sources": [
+              "Fluo2"
+            ],
             "color": "r=255,g=88,b=0,a=255",
             "contrastLimits": [
               0.0,
               132.243
             ],
+            "showImagesIn3d": false,
             "name": "second_FM_data",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "Fluo2"
-            ],
             "visible": true
           }
         }
@@ -121,87 +121,87 @@
       "sourceTransforms": [
         {
           "timepoints": {
-            "keep": false,
-            "name": "em-timepoints",
             "parameters": [
               [
                 46,
-				50
+                50
               ],
               [
                 47,
-				50
+                50
               ],
               [
                 48,
-				50
+                50
               ],
               [
                 49,
-				50
+                50
               ],
               [
                 50,
-				50
+                50
               ]
             ],
+            "keep": false,
+            "name": "em-timepoints",
             "sources": [
               "Fluo2"
             ]
           }
         }
       ],
-      "uiSelectionGroup": "CLEM",
       "viewerTransform": {
         "normalizedAffine": [
-          1.8926901467497304e-06,
+          1.8926901467497304E-6,
           0.0,
           0.0,
           -0.27853023383240416,
           0.0,
-          1.8926901467497304e-06,
+          1.8926901467497304E-6,
           0.0,
           -0.338473682616682,
           0.0,
           0.0,
-          1.8926901467497304e-06,
+          1.8926901467497304E-6,
           -0.0010587987926792212
         ],
         "timepoint": 0
-      }
+      },
+      "isExclusive": true
     },
     "clem-registered": {
-      "isExclusive": true,
+      "uiSelectionGroup": "CLEM",
       "sourceDisplays": [
         {
           "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
             "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               125.20499999999998,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "MSB26_2",
             "opacity": 0.6358,
-            "showImagesIn3d": false,
-            "sources": [
-              "MSB26_2"
-            ],
             "visible": true
           }
         },
         {
           "imageDisplay": {
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
             "color": "r=204,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
               132.243
             ],
+            "showImagesIn3d": false,
             "name": "C1-sample2_6secFrame_fixedAt33",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "C1-sample2_6secFrame_fixedAt33"
-            ],
             "visible": true
           }
         }
@@ -209,8 +209,6 @@
       "sourceTransforms": [
         {
           "timepoints": {
-            "keep": false,
-            "name": "em-timepoints",
             "parameters": [
               [
                 46,
@@ -233,6 +231,8 @@
                 0
               ]
             ],
+            "keep": false,
+            "name": "em-timepoints",
             "sources": [
               "MSB26_2"
             ]
@@ -240,7 +240,6 @@
         },
         {
           "affine": {
-            "name": "manualTransform",
             "parameters": [
               0.9953632173508059,
               0.12221523558132098,
@@ -255,85 +254,86 @@
               1.0028382213812674,
               -6960.745393115333
             ],
+            "name": "manualTransform",
             "sources": [
               "MSB26_2"
             ]
           }
         }
       ],
-      "uiSelectionGroup": "CLEM",
       "viewerTransform": {
         "normalizedAffine": [
-          7.167145736257187e-06,
+          7.167145736257187E-6,
           0.0,
           0.0,
           -0.5624841329261644,
           0.0,
-          7.167145736257187e-06,
+          7.167145736257187E-6,
           0.0,
           -0.9306885866939059,
           0.0,
           0.0,
-          7.167145736257187e-06,
+          7.167145736257187E-6,
           0.029903972548337984
         ],
         "timepoint": 48
-      }
+      },
+      "isExclusive": true
     },
     "default": {
-      "isExclusive": true,
+      "uiSelectionGroup": "bookmark",
       "sourceDisplays": [
         {
           "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
             "color": "white",
             "contrastLimits": [
               0.0,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "MSB26_2",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "MSB26_2"
-            ],
             "visible": true
           }
         }
       ],
-      "uiSelectionGroup": "bookmark"
+      "isExclusive": true
     },
     "test": {
-      "isExclusive": true,
+      "uiSelectionGroup": "CLEM",
       "sourceDisplays": [
         {
           "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
             "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
               255.0
             ],
+            "showImagesIn3d": false,
             "name": "MSB26_2",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "MSB26_2"
-            ],
             "visible": true
           }
         },
         {
           "imageDisplay": {
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
             "color": "r=204,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
               132.243
             ],
+            "showImagesIn3d": false,
             "name": "C1-sample2_6secFrame_fixedAt33",
             "opacity": 1.0,
-            "showImagesIn3d": false,
-            "sources": [
-              "C1-sample2_6secFrame_fixedAt33"
-            ],
             "visible": true
           }
         }
@@ -341,8 +341,6 @@
       "sourceTransforms": [
         {
           "timepoints": {
-            "keep": false,
-            "name": "em-timepoints",
             "parameters": [
               [
                 46,
@@ -365,30 +363,634 @@
                 0
               ]
             ],
+            "keep": false,
+            "name": "em-timepoints",
             "sources": [
               "MSB26_2"
             ]
           }
         }
       ],
-      "uiSelectionGroup": "CLEM",
       "viewerTransform": {
         "normalizedAffine": [
-          1.8926901467497279e-06,
+          1.8926901467497279E-6,
           0.0,
           0.0,
           -0.27853023383240455,
           0.0,
-          1.8926901467497279e-06,
+          1.8926901467497279E-6,
           0.0,
           -0.31810851407735613,
           0.0,
           0.0,
-          1.8926901467497279e-06,
+          1.8926901467497279E-6,
           -0.0010587987926792197
         ],
         "timepoint": 48
-      }
+      },
+      "isExclusive": true
+    },
+    "pre": {
+      "uiSelectionGroup": "test",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              125.20499999999998,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "MSB26_2",
+            "opacity": 0.6358,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
+            "color": "r=204,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              132.243
+            ],
+            "showImagesIn3d": false,
+            "name": "C1-sample2_6secFrame_fixedAt33",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "timepoints": {
+            "parameters": [
+              [
+                46,
+                0
+              ],
+              [
+                47,
+                0
+              ],
+              [
+                48,
+                0
+              ],
+              [
+                49,
+                0
+              ],
+              [
+                50,
+                0
+              ]
+            ],
+            "keep": false,
+            "name": "em-timepoints",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9953632173508059,
+              0.12221523558132098,
+              0.0,
+              3997.7704101479676,
+              -0.12221523558132098,
+              0.9953632173508059,
+              0.0,
+              -9844.095004861636,
+              0.0,
+              0.0,
+              1.0028382213812674,
+              -6960.745393115333
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9953632173508059,
+              0.12221523558132098,
+              0.0,
+              3997.7704101479676,
+              -0.12221523558132098,
+              0.9953632173508059,
+              0.0,
+              -9844.095004861636,
+              0.0,
+              0.0,
+              1.0028382213812674,
+              -6960.745393115333
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        }
+      ],
+      "viewerTransform": {
+        "normalizedAffine": [
+          7.167145736257188E-6,
+          0.0,
+          0.0,
+          -1.0124841329261645,
+          0.0,
+          7.167145736257188E-6,
+          0.0,
+          -0.8844385866939058,
+          0.0,
+          0.0,
+          7.167145736257188E-6,
+          0.02990397254833799
+        ],
+        "timepoint": 48
+      },
+      "isExclusive": true
+    },
+    "post": {
+      "uiSelectionGroup": "test",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              125.20499999999998,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "MSB26_2",
+            "opacity": 0.6358,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
+            "color": "r=204,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              132.243
+            ],
+            "showImagesIn3d": false,
+            "name": "C1-sample2_6secFrame_fixedAt33",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "timepoints": {
+            "parameters": [
+              [
+                46,
+                0
+              ],
+              [
+                47,
+                0
+              ],
+              [
+                48,
+                0
+              ],
+              [
+                49,
+                0
+              ],
+              [
+                50,
+                0
+              ]
+            ],
+            "keep": false,
+            "name": "em-timepoints",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9953632173508059,
+              0.12221523558132098,
+              0.0,
+              3997.7704101479676,
+              -0.12221523558132098,
+              0.9953632173508059,
+              0.0,
+              -9844.095004861636,
+              0.0,
+              0.0,
+              1.0028382213812674,
+              -6960.745393115333
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9953632173508059,
+              0.12221523558132098,
+              0.0,
+              -58091.102395777,
+              -0.12221523558132098,
+              0.9953632173508059,
+              0.0,
+              -4524.683149297838,
+              0.0,
+              0.0,
+              1.0028382213812674,
+              -6960.745393115333
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9758113706467499,
+              0.24329710019502068,
+              0.0,
+              -73366.08608790644,
+              -0.24329710019502068,
+              0.9758113706467499,
+              0.0,
+              13965.424426149535,
+              0.0,
+              0.0,
+              1.0056844982631439,
+              -8621.835067071166
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        }
+      ],
+      "viewerTransform": {
+        "normalizedAffine": [
+          7.167145736257188E-6,
+          0.0,
+          0.0,
+          -0.5624841329261644,
+          0.0,
+          7.167145736257188E-6,
+          0.0,
+          -0.9244385866939058,
+          0.0,
+          0.0,
+          7.167145736257188E-6,
+          0.02990397254833799
+        ],
+        "timepoint": 48
+      },
+      "isExclusive": true
+    },
+    "pre2": {
+      "uiSelectionGroup": "test",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              125.20499999999998,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "MSB26_2",
+            "opacity": 0.6358,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
+            "color": "r=204,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              132.243
+            ],
+            "showImagesIn3d": false,
+            "name": "C1-sample2_6secFrame_fixedAt33",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "timepoints": {
+            "parameters": [
+              [
+                46,
+                0
+              ],
+              [
+                47,
+                0
+              ],
+              [
+                48,
+                0
+              ],
+              [
+                49,
+                0
+              ],
+              [
+                50,
+                0
+              ]
+            ],
+            "keep": false,
+            "name": "em-timepoints",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9953632173508059,
+              0.12221523558132098,
+              0.0,
+              3997.7704101479676,
+              -0.12221523558132098,
+              0.9953632173508059,
+              0.0,
+              -9844.095004861636,
+              0.0,
+              0.0,
+              1.0028382213812674,
+              -6960.745393115333
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9953632173508059,
+              0.12221523558132098,
+              0.0,
+              -58091.102395777,
+              -0.12221523558132098,
+              0.9953632173508059,
+              0.0,
+              -4524.683149297838,
+              0.0,
+              0.0,
+              1.0028382213812674,
+              -6960.745393115333
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9758113706467499,
+              0.24329710019502068,
+              0.0,
+              -55314.96716820634,
+              -0.24329710019502068,
+              0.9758113706467499,
+              0.0,
+              -14811.721677720181,
+              0.0,
+              0.0,
+              1.0056844982631439,
+              -13941.246922634964
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        }
+      ],
+      "viewerTransform": {
+        "normalizedAffine": [
+          7.167145736257188E-6,
+          0.0,
+          0.0,
+          -0.6918591329261645,
+          0.0,
+          7.167145736257188E-6,
+          0.0,
+          -0.7181885866939058,
+          0.0,
+          0.0,
+          7.167145736257188E-6,
+          0.068028972548338
+        ],
+        "timepoint": 48
+      },
+      "isExclusive": true
+    },
+    "post2": {
+      "uiSelectionGroup": "test",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              125.20499999999998,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "MSB26_2",
+            "opacity": 0.6358,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
+            "color": "r=204,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              132.243
+            ],
+            "showImagesIn3d": false,
+            "name": "C1-sample2_6secFrame_fixedAt33",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "timepoints": {
+            "parameters": [
+              [
+                46,
+                0
+              ],
+              [
+                47,
+                0
+              ],
+              [
+                48,
+                0
+              ],
+              [
+                49,
+                0
+              ],
+              [
+                50,
+                0
+              ]
+            ],
+            "keep": false,
+            "name": "em-timepoints",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9953632173508059,
+              0.12221523558132098,
+              0.0,
+              3997.7704101479676,
+              -0.12221523558132098,
+              0.9953632173508059,
+              0.0,
+              -9844.095004861636,
+              0.0,
+              0.0,
+              1.0028382213812674,
+              -6960.745393115333
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9953632173508059,
+              0.12221523558132098,
+              0.0,
+              -58091.102395777,
+              -0.12221523558132098,
+              0.9953632173508059,
+              0.0,
+              -4524.683149297838,
+              0.0,
+              0.0,
+              1.0028382213812674,
+              -6960.745393115333
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9758113706467499,
+              0.24329710019502068,
+              0.0,
+              -73366.08608790644,
+              -0.24329710019502068,
+              0.9758113706467499,
+              0.0,
+              13965.424426149535,
+              0.0,
+              0.0,
+              1.0056844982631439,
+              -8621.835067071166
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        }
+      ],
+      "viewerTransform": {
+        "normalizedAffine": [
+          7.167145736257188E-6,
+          0.0,
+          0.0,
+          -0.5624841329261644,
+          0.0,
+          7.167145736257188E-6,
+          0.0,
+          -0.9244385866939058,
+          0.0,
+          0.0,
+          7.167145736257188E-6,
+          0.02990397254833799
+        ],
+        "timepoint": 48
+      },
+      "isExclusive": true
     }
   }
 }

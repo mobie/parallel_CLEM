@@ -138,6 +138,72 @@
         }
       ],
       "uiSelectionGroup": "bookmark"
+    },
+    "clem": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "blendingMode": "sum",
+            "color": "255-255-255-255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "MSB30_4_FM",
+            "opacity": 1.0,
+            "showImagesIn3d": false,
+            "sources": [
+              "MSB30_4_FM"
+            ],
+            "visible": true
+          }
+        },
+		{
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "MSB30_4_EM",
+            "opacity": 1.0,
+            "sources": [
+              "MSB30_4"
+            ]
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "timepoints": {
+            "keep": false,
+            "name": "em-timepoints",
+            "parameters": [
+              [
+                45,
+				48
+              ],
+              [
+                46,
+				48
+              ],
+              [
+                47,
+				48
+              ],
+              [
+                48,
+				48
+              ]
+            ],
+            "sources": [
+              "MSB30_4"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "CLEM"
     }
   }
 }
