@@ -36,6 +36,15 @@
         }
       }
     },
+    "26_2_register": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "relativePath": "images/ome-zarr/26_2_register.ome.zarr"
+          }
+        }
+      }
+    },
     "C2-MSB26_2_tracks-1": {
       "image": {
         "imageData": {
@@ -196,6 +205,109 @@
         }
       ],
       "isExclusive": false
+    },
+    "26_2_register": {
+      "uiSelectionGroup": "CLEM",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "26_2_register"
+            ],
+            "color": "r255-g255-b255-a255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "26_2_register",
+            "opacity": 1.0,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "registered": {
+      "uiSelectionGroup": "CLEM",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "MSB26_2"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              154.65750000000003,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "MSB26_2",
+            "opacity": 0.6167,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "26_2_register"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "26_2_register",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "affine": {
+            "parameters": [
+              0.9925461516413224,
+              0.1218693434051475,
+              0.0,
+              -57.80940021543328,
+              -0.1218693434051475,
+              0.9925461516413224,
+              0.0,
+              -1.5815311019674851,
+              0.0,
+              0.0,
+              1.0,
+              -5.509510917565635
+            ],
+            "name": "manualTransform",
+            "sources": [
+              "MSB26_2"
+            ]
+          }
+        }
+      ],
+      "viewerTransform": {
+        "normalizedAffine": [
+          0.002193651096791311,
+          0.0,
+          0.0,
+          -0.33275912803634583,
+          0.0,
+          0.002193651096791311,
+          0.0,
+          -0.32650912803634563,
+          0.0,
+          0.0,
+          0.002193651096791311,
+          0.0
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true
     }
   }
 }

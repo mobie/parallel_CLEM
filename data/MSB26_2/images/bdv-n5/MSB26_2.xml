@@ -15,8 +15,8 @@
         <name>MSB26_2</name>
         <size>35558 35922 539</size>
         <voxelSize>
-          <unit>nanometer</unit>
-          <size>10.0 10.0 40.0</size>
+          <unit>micrometer</unit>
+          <size>0.01 0.01 0.04</size>
         </voxelSize>
         <attributes>
           <channel>0</channel>
@@ -31,7 +31,7 @@
   <ViewRegistrations>
     <ViewRegistration setup="0" timepoint="0">
       <ViewTransform type="affine">
-        <affine>10.0 0.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 0.0 40.0 0.0</affine>
+        <affine>0.01 0.0 0.0 0.0 0.0 0.01 0.0 0.0 0.0 0.0 0.04 0.0</affine>
       </ViewTransform>
     </ViewRegistration>
   </ViewRegistrations>
