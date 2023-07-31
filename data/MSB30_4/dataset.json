@@ -18,15 +18,6 @@
         }
       }
     },
-    "30_4_FM_align": {
-      "image": {
-        "imageData": {
-          "ome.zarr": {
-            "relativePath": "images/ome-zarr/30_4_FM_align.ome.zarr"
-          }
-        }
-      }
-    },
     "MSB30_4_FM": {
       "image": {
         "imageData": {
@@ -177,7 +168,7 @@
       ],
       "isExclusive": true
     },
-    "clem": {
+    "clem_timepoints_only": {
       "uiSelectionGroup": "CLEM",
       "sourceDisplays": [
         {
@@ -220,23 +211,113 @@
             "parameters": [
               [
                 45,
-                48
+                0
               ],
               [
                 46,
-                48
+                0
               ],
               [
                 47,
-                48
+                0
               ],
               [
                 48,
-                48
+                0
               ]
             ],
             "keep": false,
             "name": "em-timepoints",
+            "sources": [
+              "MSB30_4"
+            ]
+          }
+        }
+      ],
+      "isExclusive": true
+    },
+    "clem_registered": {
+      "uiSelectionGroup": "CLEM",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "MSB30_4_FM"
+            ],
+            "color": "255-255-255-255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "MSB30_4_FM",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "MSB30_4"
+            ],
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "MSB30_4_EM",
+            "opacity": 1.0,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [
+        {
+          "timepoints": {
+            "parameters": [
+              [
+                45,
+                0
+              ],
+              [
+                46,
+                0
+              ],
+              [
+                47,
+                0
+              ],
+              [
+                48,
+                0
+              ]
+            ],
+            "keep": false,
+            "name": "em-timepoints",
+            "sources": [
+              "MSB30_4"
+            ]
+          }
+        },
+        {
+          "affine": {
+            "parameters": [
+              0.9902680687415703,
+              -0.13917310096006547,
+              0.0,
+              -32.07810772809255,
+              0.13917310096006547,
+              0.9902680687415703,
+              0.0,
+              6.075018994169476,
+              0.0,
+              0.0,
+              1.0000000000000002,
+              -2.737705424713085
+            ],
+            "name": "manualTransform",
             "sources": [
               "MSB30_4"
             ]
@@ -366,7 +447,6 @@
           }
         }
       ],
-      "sourceTransforms": [],
       "viewerTransform": {
         "normalizedAffine": [
           9.436311018734582E-4,
@@ -385,109 +465,6 @@
         "timepoint": 0
       },
       "isExclusive": false
-    },
-    "30_4_FM_align": {
-      "uiSelectionGroup": "CLEM",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "30_4_FM_align"
-            ],
-            "color": "r255-g255-b255-a255",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "name": "30_4_FM_align",
-            "opacity": 1.0,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "registered1": {
-      "uiSelectionGroup": "CLEM",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "MSB30_4"
-            ],
-            "color": "r=0,g=255,b=204,a=255",
-            "contrastLimits": [
-              104.4735,
-              237.966
-            ],
-            "showImagesIn3d": false,
-            "name": "MSB30_4",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "30_4_FM_align"
-            ],
-            "color": "r=255,g=51,b=255,a=255",
-            "contrastLimits": [
-              -33.45599999999999,
-              102.02550000000002
-            ],
-            "showImagesIn3d": false,
-            "name": "30_4_FM_align",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        }
-      ],
-      "sourceTransforms": [
-        {
-          "affine": {
-            "parameters": [
-              0.9902680687415703,
-              -0.13917310096006547,
-              0.0,
-              -32.07810772809255,
-              0.13917310096006547,
-              0.9902680687415703,
-              0.0,
-              6.075018994169476,
-              0.0,
-              0.0,
-              1.0000000000000002,
-              -2.737705424713085
-            ],
-            "name": "manualTransform",
-            "sources": [
-              "MSB30_4"
-            ]
-          }
-        }
-      ],
-      "viewerTransform": {
-        "normalizedAffine": [
-          0.001788031996034749,
-          0.0,
-          0.0,
-          -0.33322430423406385,
-          0.0,
-          0.001788031996034749,
-          0.0,
-          -0.23977778172533096,
-          0.0,
-          0.0,
-          0.001788031996034749,
-          8.741258741258747E-5
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true
     }
   }
 }
