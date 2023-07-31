@@ -9,18 +9,6 @@
     "timepoint": 0
   },
   "sources": {
-    "C1-MSB26_2_tracks-1": {
-      "image": {
-        "imageData": {
-          "ome.zarr": {
-            "relativePath": "images/ome-zarr/C1-MSB26_2_tracks-1.ome.zarr"
-          },
-          "ome.zarr.s3": {
-            "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C1-MSB26_2_tracks-1.ome.zarr"
-          }
-        }
-      }
-    },
     "MSB26_2_spotIDs": {
       "segmentation": {
         "tableData": {
@@ -59,6 +47,18 @@
         }
       }
     },
+    "C1-MSB26_2_tracks-1": {
+      "image": {
+        "imageData": {
+          "ome.zarr": {
+            "relativePath": "images/ome-zarr/C1-MSB26_2_tracks-1.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C1-MSB26_2_tracks-1.ome.zarr"
+          }
+        }
+      }
+    },
     "C2-MSB26_2_tracks-1": {
       "image": {
         "imageData": {
@@ -79,18 +79,6 @@
           },
           "ome.zarr.s3": {
             "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C3-MSB26_2_tracks-1.ome.zarr"
-          }
-        }
-      }
-    },
-    "Fluo2": {
-      "image": {
-        "imageData": {
-          "ome.zarr": {
-            "relativePath": "images/ome-zarr/C1-sample2_6secFrame_fixedAt33.ome.zarr"
-          },
-          "ome.zarr.s3": {
-            "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C1-sample2_6secFrame_fixedAt33.ome.zarr"
           }
         }
       }
@@ -439,20 +427,20 @@
       "isExclusive": false
     },
     "default": {
-      "uiSelectionGroup": "bookmark",
+      "uiSelectionGroup": "EM",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
-              "C3-MSB26_2_tracks-1"
+              "MSB26_2"
             ],
-            "color": "r0-g0-b255-a255",
+            "color": "white",
             "contrastLimits": [
               0.0,
               255.0
             ],
             "showImagesIn3d": false,
-            "name": "C3-MSB26_2_tracks-1",
+            "name": "MSB26_2",
             "opacity": 1.0,
             "visible": true
           }
