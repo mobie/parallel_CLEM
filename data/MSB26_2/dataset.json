@@ -1,5 +1,4 @@
 {
-  "is2D": false,
   "defaultLocation": {
     "position": [
       0.0,
@@ -8,21 +7,16 @@
     ],
     "timepoint": 0
   },
+  "is2D": false,
   "sources": {
     "C1-MSB26_2_tracks-1": {
       "image": {
         "imageData": {
           "ome.zarr": {
             "relativePath": "images/ome-zarr/C1-MSB26_2_tracks-1.ome.zarr"
-          }
-        }
-      }
-    },
-    "MSB26_2": {
-      "image": {
-        "imageData": {
-          "bdv.n5": {
-            "relativePath": "images/bdv-n5/MSB26_2.xml"
+          },
+          "ome.zarr.s3": {
+            "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C1-MSB26_2_tracks-1.ome.zarr"
           }
         }
       }
@@ -32,6 +26,9 @@
         "imageData": {
           "ome.zarr": {
             "relativePath": "images/ome-zarr/C1-sample2_6secFrame_fixedAt33.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C1-sample2_6secFrame_fixedAt33.ome.zarr"
           }
         }
       }
@@ -41,6 +38,9 @@
         "imageData": {
           "ome.zarr": {
             "relativePath": "images/ome-zarr/C2-MSB26_2_tracks-1.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C2-MSB26_2_tracks-1.ome.zarr"
           }
         }
       }
@@ -50,6 +50,9 @@
         "imageData": {
           "ome.zarr": {
             "relativePath": "images/ome-zarr/C3-MSB26_2_tracks-1.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C3-MSB26_2_tracks-1.ome.zarr"
           }
         }
       }
@@ -59,104 +62,119 @@
         "imageData": {
           "ome.zarr": {
             "relativePath": "images/ome-zarr/C1-sample2_6secFrame_fixedAt33.ome.zarr"
+          },
+          "ome.zarr.s3": {
+            "s3Address": "https://s3.embl.de/parallel-clem/MSB26_2/images/ome-zarr/C1-sample2_6secFrame_fixedAt33.ome.zarr"
+          }
+        }
+      }
+    },
+    "MSB26_2": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/MSB26_2.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/MSB26_2.xml"
           }
         }
       }
     }
   },
   "views": {
-    "MSB26_2": {
-      "uiSelectionGroup": "EM",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "MSB26_2"
-            ],
-            "color": "white",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "name": "MSB26_2",
-            "opacity": 1.0,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "C1-sample2_6secFrame_fixedAt33": {
-      "uiSelectionGroup": "fluo",
+      "isExclusive": false,
       "sourceDisplays": [
         {
           "imageDisplay": {
-            "sources": [
-              "C1-sample2_6secFrame_fixedAt33"
-            ],
             "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
               255.0
             ],
-            "showImagesIn3d": false,
             "name": "C1-sample2_6secFrame_fixedAt33",
             "opacity": 1.0,
+            "showImagesIn3d": false,
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
             "visible": true
           }
         }
       ],
-      "isExclusive": false
+      "uiSelectionGroup": "fluo"
     },
-    "MSB26_2_tracks-RGB": {
-      "uiSelectionGroup": "tracks",
+    "MSB26_2": {
+      "isExclusive": false,
       "sourceDisplays": [
         {
           "imageDisplay": {
-            "sources": [
-              "C1-MSB26_2_tracks-1"
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              255.0
             ],
+            "name": "MSB26_2",
+            "opacity": 1.0,
+            "showImagesIn3d": false,
+            "sources": [
+              "MSB26_2"
+            ],
+            "visible": true
+          }
+        }
+      ],
+      "uiSelectionGroup": "EM"
+    },
+    "MSB26_2_tracks-RGB": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
             "color": "r255-g0-b0-a255",
             "contrastLimits": [
               0.0,
               255.0
             ],
-            "showImagesIn3d": false,
             "name": "C1-MSB26_2_tracks-1",
             "opacity": 1.0,
+            "showImagesIn3d": false,
+            "sources": [
+              "C1-MSB26_2_tracks-1"
+            ],
             "visible": true
           }
         },
         {
           "imageDisplay": {
-            "sources": [
-              "C2-MSB26_2_tracks-1"
-            ],
             "color": "r0-g255-b0-a255",
             "contrastLimits": [
               0.0,
               255.0
             ],
-            "showImagesIn3d": false,
             "name": "C2-MSB26_2_tracks-1",
             "opacity": 1.0,
+            "showImagesIn3d": false,
+            "sources": [
+              "C2-MSB26_2_tracks-1"
+            ],
             "visible": true
           }
         },
         {
           "imageDisplay": {
-            "sources": [
-              "C3-MSB26_2_tracks-1"
-            ],
             "color": "r0-g0-b255-a255",
             "contrastLimits": [
               0.0,
               255.0
             ],
-            "showImagesIn3d": false,
             "name": "C3-MSB26_2_tracks-1",
             "opacity": 1.0,
+            "showImagesIn3d": false,
+            "sources": [
+              "C3-MSB26_2_tracks-1"
+            ],
             "visible": true
           }
         }
@@ -164,6 +182,7 @@
       "sourceTransforms": [
         {
           "affine": {
+            "name": "manualTransform",
             "parameters": [
               0.9090909090909091,
               0.0,
@@ -178,7 +197,6 @@
               0.9090909090909091,
               0.0
             ],
-            "name": "manualTransform",
             "sources": [
               "C1-MSB26_2_tracks-1",
               "C2-MSB26_2_tracks-1",
@@ -188,6 +206,8 @@
         },
         {
           "timepoints": {
+            "keep": false,
+            "name": "em-timepoints",
             "parameters": [
               [
                 0,
@@ -394,8 +414,6 @@
                 0
               ]
             ],
-            "keep": false,
-            "name": "em-timepoints",
             "sources": [
               "C1-MSB26_2_tracks-1",
               "C2-MSB26_2_tracks-1",
@@ -404,63 +422,63 @@
           }
         }
       ],
-      "isExclusive": false
+      "uiSelectionGroup": "tracks"
     },
     "default": {
-      "uiSelectionGroup": "bookmark",
+      "isExclusive": true,
       "sourceDisplays": [
         {
           "imageDisplay": {
-            "sources": [
-              "C3-MSB26_2_tracks-1"
-            ],
             "color": "r0-g0-b255-a255",
             "contrastLimits": [
               0.0,
               255.0
             ],
-            "showImagesIn3d": false,
             "name": "C3-MSB26_2_tracks-1",
             "opacity": 1.0,
+            "showImagesIn3d": false,
+            "sources": [
+              "C3-MSB26_2_tracks-1"
+            ],
             "visible": true
           }
         }
       ],
-      "isExclusive": true
+      "uiSelectionGroup": "bookmark"
     },
     "registered": {
-      "uiSelectionGroup": "CLEM",
+      "isExclusive": true,
       "sourceDisplays": [
         {
           "imageDisplay": {
-            "sources": [
-              "MSB26_2"
-            ],
+            "blendingMode": "sum",
             "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               154.65750000000003,
               255.0
             ],
-            "showImagesIn3d": false,
             "name": "MSB26_2",
             "opacity": 0.6167,
-            "visible": true,
-            "blendingMode": "sum"
+            "showImagesIn3d": false,
+            "sources": [
+              "MSB26_2"
+            ],
+            "visible": true
           }
         },
         {
           "imageDisplay": {
-            "sources": [
-              "C1-sample2_6secFrame_fixedAt33"
-            ],
             "color": "r=255,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
               255.0
             ],
-            "showImagesIn3d": false,
             "name": "C1-sample2_6secFrame_fixedAt33",
             "opacity": 1.0,
+            "showImagesIn3d": false,
+            "sources": [
+              "C1-sample2_6secFrame_fixedAt33"
+            ],
             "visible": true
           }
         }
@@ -468,6 +486,8 @@
       "sourceTransforms": [
         {
           "timepoints": {
+            "keep": false,
+            "name": "em-timepoints",
             "parameters": [
               [
                 47,
@@ -486,8 +506,6 @@
                 0
               ]
             ],
-            "keep": false,
-            "name": "em-timepoints",
             "sources": [
               "MSB26_2"
             ]
@@ -495,6 +513,7 @@
         },
         {
           "affine": {
+            "name": "manualTransform",
             "parameters": [
               0.9925461516413224,
               0.1218693434051475,
@@ -509,13 +528,13 @@
               1.0,
               -5.509510917565635
             ],
-            "name": "manualTransform",
             "sources": [
               "MSB26_2"
             ]
           }
         }
       ],
+      "uiSelectionGroup": "CLEM",
       "viewerTransform": {
         "normalizedAffine": [
           0.002193651096791311,
@@ -532,8 +551,7 @@
           0.0
         ],
         "timepoint": 0
-      },
-      "isExclusive": true
+      }
     }
   }
 }
