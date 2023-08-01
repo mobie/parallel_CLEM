@@ -83,7 +83,7 @@
         },
         "tableData": {
           "tsv": {
-            "relativePath": "tables/MSB30_4_spotIDs"
+            "relativePath": "tables/MSB30_4_spotIDs/trackmate"
           }
         }
       }
@@ -431,6 +431,7 @@
             "name": "MSB30_4_spotIDs",
             "opacity": 0.5,
             "opacityNotSelected": 0.15,
+            "colorByColumn": "TRACK_ID",
             "randomColorSeed": 42,
             "scatterPlotAxes": [
               "anchor_x",
